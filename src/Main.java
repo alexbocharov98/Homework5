@@ -3,22 +3,19 @@ public class Main {
         int clientOS = 1;
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        }
-        if (clientOS == 1) {
+        } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
+
 
         int clientDeviceYear = 2013;
         if (clientOS == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        }
-        if (clientOS == 0 && clientDeviceYear < 2015) {
+        } else if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        }
-        if (clientOS == 1 && clientDeviceYear >= 2015) {
+        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
-        }
-        if (clientOS == 1 && clientDeviceYear < 2015) {
+        }else if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
 
@@ -35,51 +32,37 @@ public class Main {
         int day = 1;
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: " + day);
-        } else if (deliveryDistance > 20 && deliveryDistance < 60) {
+        } else if (deliveryDistance >= 20 && deliveryDistance <= 60) {
             System.out.println("Потребуется дней: " + (day + 1));
-        } else if (deliveryDistance > 60 && deliveryDistance < 100) {
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
             System.out.println("Потребуется дней: " + (day + 2));
         } else {
             System.out.println("Доставки нет");
         }
 
-        int monthNumber = 3;
+        int monthNumber = 6;
         switch (monthNumber) {
             case 1:
-                System.out.println("Январь");
-                break;
             case 2:
-                System.out.println("Февраль");
+                System.out.println("Зима");
                 break;
             case 3:
-                System.out.println("Март");
-                break;
             case 4:
-                System.out.println("Апрель");
-                break;
             case 5:
-                System.out.println("Май");
+                System.out.println("Весна");
                 break;
             case 6:
-                System.out.println("Июнь");
-                break;
             case 7:
-                System.out.println("Июль");
-                break;
             case 8:
-                System.out.println("Август");
+                System.out.println("Лето");
                 break;
             case 9:
-                System.out.println("Сентябрь");
-                break;
             case 10:
-                System.out.println("Октябрь");
-                break;
             case 11:
-                System.out.println("Ноябрь");
+                System.out.println("Осень");
                 break;
             case 12:
-                System.out.println("Декабрь");
+                System.out.println("Зима");
                 break;
             default:
                 System.out.println("Такого месяца не существует");
